@@ -4,9 +4,8 @@ import cv2
 import numpy as np
 import torch
 from PIL import Image
-from diffusers import FluxPipeline, ControlNetModel, AutoencoderKL, StableDiffusionXLControlNetPipeline
+from diffusers import ControlNetModel, AutoencoderKL, StableDiffusionXLControlNetPipeline
 from diffusers.utils import load_image
-from google.cloud import storage
 
 from lib.upload import upload_multiple_images
 

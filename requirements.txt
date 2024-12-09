@@ -1,0 +1,5 @@
+diffusers==0.31.0
+transformers==4.47.0
+google_Cloud_storage==2.19.0
+torch==2.5.1
+opencv-python==4.10.0.84
