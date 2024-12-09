@@ -3,11 +3,12 @@ import numpy as np
 import cv2
 from PIL import Image
 from diffusers import StableDiffusionInpaintPipeline
+from diffusers.utils import load_image
 
 from lib.upload import upload_image
 
 
-def create_canny_background_mask(image_path, low_threshold=100, high_threshold=200):
+def create_canny_background_mask(image, low_threshold=100, high_threshold=200):
     """
     Create a background mask using Canny edge detection.
 
@@ -20,7 +21,7 @@ def create_canny_background_mask(image_path, low_threshold=100, high_threshold=2
         tuple: (PIL Image mask, original image)
     """
     # Read the image
-    image = cv2.imread(image_path)
+    image = cv2.imread(image)
 
     # Convert to grayscale
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -45,7 +46,7 @@ def create_canny_background_mask(image_path, low_threshold=100, high_threshold=2
     return pil_mask, pil_image
 
 
-def change_image_background(input_image_path, prompt, negative_prompt=None):
+def change_image_background(image, prompt, negative_prompt=None):
     """
     Change the background of an input image using Stable Diffusion inpainting.
 
@@ -64,7 +65,7 @@ def change_image_background(input_image_path, prompt, negative_prompt=None):
     ).to("cuda")
 
     # Create mask using Canny edge detection
-    mask, image = create_canny_background_mask(input_image_path)
+    mask, image = create_canny_background_mask(image)
 
     # Set default negative prompt if not provided
     if negative_prompt is None:
@@ -84,14 +85,15 @@ def change_image_background(input_image_path, prompt, negative_prompt=None):
 
 
 def main():
-    # Path to your input image
-    input_image_path = "path/to/your/input/image.jpg"
+    image = load_image(
+        "https://storage.googleapis.com/crescis-testing/128464536273.png"
+    )
 
     # Desired background description
     background_prompt = "serene mountain landscape with misty morning light"
 
     # Change the background
-    result_image = change_image_background(input_image_path, background_prompt)
+    result_image = change_image_background(image, background_prompt)
 
     # Save the result
     upload_image(result_image,"sd-flux")
