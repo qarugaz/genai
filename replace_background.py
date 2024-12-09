@@ -19,6 +19,9 @@ def change_image_background(image, prompt, negative_prompt=None):
 
     Returns:
         Image: Modified image with new background
+        :param negative_prompt:
+        :param prompt:
+        :param image:
     """
     # Load the Stable Diffusion Inpainting Pipeline
     pipe = StableDiffusionInpaintPipeline.from_pretrained(
