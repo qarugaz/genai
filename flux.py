@@ -29,7 +29,7 @@ def main():
         num_inference_steps=50,
         max_sequence_length=512,
         generator=torch.Generator("cpu").manual_seed(0)
-    )
+    ).images
 
     bucket_name = "sd-flux"
     return upload_multiple_images(images, bucket_name)
