@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "elite-thunder-444206-t2",
+  "private_key_id": "b05eb3a2c540cd155c2973b370d05928b0dc00f7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+uQ0267VT0DlQ\nGTmMmXykLqRxFkD+Vd4Ka3zx/HrFkZAb+4V99+12GCYAIZbBpkm7tcl3IXSyx2Pi\n4t1TWhM8dTELJWcpT9R9B9cfIxTbLTNNqBZ5Pk4JJZWnpwjlGhmFgFSXwPP65f+D\nUp+88n7MQYYy8fiiRIntjIJd2yzOF2xvj9Gum5uIEG7L4ntz0jFfM/9bUdSd5Z0x\nIF8kSVOR6gKUAn3bxgLioJWr8IjEahFnufhwlWrnbgd16yYQN1LvtcmVgV0eAVmI\n+j/v6IncnsPHy5jpFezamcfBGX8wA852P7D9GUUGYE96BDSl8MbiFK+3+2el3txN\ng15cPp/xAgMBAAECggEAEi7x6dXMpqZARJj3EebTSZLx1h9NSIJWxk8LrUWJTftM\nDkLrbgBceSkhvFr3dNR+DKGvCMbdiar1ZL0E5Wy9z0KMD7g77uYfx+Deu2b8ls3n\nKYT4SYxtY7Vb4I1ODYuwubfruMEqcbYKZ5KRzLGg8afgm8xSjGP083s1Na4PBkHu\nw0FaXu0IeoHz4yGXNE1JPxfEl22DLPi8IUK8Eh1EG0uz3hgwKBs85DfOxaLR3as4\nymrXhkxr66NWwkVjON5pPerx7Pvml4QJirxztoJ7JrZ0PnHvVC2f1BvMLw28qx5a\nXXy1zM+lMzBWY2xd39S2zJoWMLhEXrx16otWi9OaXQKBgQDoDvpbLxxnAs2Jf+TB\nphkKL9CHzH3yUYX/QbGG7Of/4x0fuRa8affSq8qpwPjIIM04K0/Amp33pT+/SP/K\n7onR5eMWqy4+9EfmnKwNVYCKMa2myIV1mYuzA3cdyBfF87i1l7hXALVnXUJ8OnYT\n2Yaomhvbla/yYNHMPfmPzIiQzQKBgQDSZlXpNOwplvlbMFYWZ04iM6jDQUOw3e2m\nj1mmFWvosYsB8LnH2DKMTKUQQGj3grgggqpSAsVnpAKR0TLfOStfxsvaUpLOC/QO\nZgrNOyZdtbaJPNjGGzDI8bXiCbnxVNWaFE+ZGgElB4tBv3UqD2jVJPTPzIXRedRH\nwD+C+5U7tQKBgDLkngmDcoIw/izKrLu/lrxCMkSmF3UeZfnOSYXizRq0j32WlSLr\nRpuga4kBNk6Fyxwne40tG7nlNu7Xrqmt2PH8reoZzsGlx2MPNziRaOhl7sSmM4bQ\nDvBKsUQJzxTt17OTu6zxDdfGfz9Jfv3pdfviGHv2/yh0DW7ypJnh7I19AoGARseU\neSqLlAYtBqdBHrJMD6dvS5hGDFbsXs70qrGkJpirmdCAvyEVCCu0j74LUdCQ3qb2\nYzZ5cD81ehZ1VbDmzYaUB3Ml3dkZlkpvsdEHPBkoOgzVI/f7tm3R8SOygOQ4I2hX\nyrp7zhg2mbytzqN2cdXH4av9DJY+epDLDOZTss0CgYEAyyQvsK/qfFawa2jyothz\nKJ105BMiKiHO5Fv+SG27dWfLKjEK+GYlcxo9J3itb8pBGaxV80ldvJITkHeOlkoI\njZz+3JEfB7KSC9tBEprej/OZgscwoPGziB4bHHSzYuvra/JUDf2dhF3TAxmtNweh\nCNjtnq+r6XpmNqP0ABv9pAw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "crescis-storage@elite-thunder-444206-t2.iam.gserviceaccount.com",
+  "client_id": "110029856834782019222",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/crescis-storage%40elite-thunder-444206-t2.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
