@@ -47,3 +47,6 @@ def sdxl():
 
     bucket_name = "sd-flux"
     return upload_multiple_images(images, bucket_name)
+
+if __name__ == "__main__":
+    sdxl()
