@@ -19,6 +19,9 @@ def create_canny_background_mask(image, low_threshold=100, high_threshold=200):
 
     Returns:
         tuple: (PIL Image mask, original image)
+        :param high_threshold:
+        :param low_threshold:
+        :param image:
     """
     # Read the image
     image = cv2.imread(image)
