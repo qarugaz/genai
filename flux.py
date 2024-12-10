@@ -6,6 +6,7 @@ from lib.upload import upload_multiple_images
 
 def main():
     pipe = FluxPipeline.from_pretrained("black-forest-labs/FLUX.1-dev", torch_dtype=torch.bfloat16)
+    pipe.enable_model_cpu_offload()
 
     prompt = ("A luxurious sofa set placed in a spacious living room with "
               "large windows offering a serene view of a tranquil lake. "
@@ -23,7 +24,7 @@ def main():
         prompt,
         height=1024,
         width=1024,
-        num_images_per_prompt=4,
+        num_images_per_prompt=2,
         guidance_scale=3.5,
         num_inference_steps=50,
         max_sequence_length=512,

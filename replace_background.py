@@ -34,18 +34,18 @@ def change_image_background(image, prompt, negative_prompt=None):
 
     # Create a mask to identify the background
     # This is a simple method and might need refinement for complex images
-    def create_background_mask(image):
+    def create_background_mask(img):
         # Convert to grayscale
-        gray = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2GRAY)
+        gray = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2GRAY)
 
         # Apply threshold to create a binary mask
         _, thresh = cv2.threshold(gray, 240, 255, cv2.THRESH_BINARY)
 
         # Optional: Apply some morphological operations to refine the mask
         kernel = np.ones((5, 5), np.uint8)
-        mask = cv2.dilate(thresh, kernel, iterations=2)
+        msk = cv2.dilate(thresh, kernel, iterations=2)
 
-        return Image.fromarray(mask)
+        return Image.fromarray(msk)
 
     # Generate the mask
     mask = create_background_mask(image)
